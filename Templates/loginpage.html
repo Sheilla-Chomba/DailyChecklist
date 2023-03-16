@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="english" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="/Static/style.css" />
+  </head>
+  <body>
+    <div>
+      <link href="/Static/loginpage.css" rel="stylesheet" />
+
+      <div class="loginpage-container">
+        <div class="loginpage-loginpage">
+          <div class="loginpage-background-pattern">
+            <img
+              src="/Static/rectangle15140-72p5.svg"
+              alt="Rectangle15140"
+              class="loginpage-rectangle1"
+            />
+            <img
+              src="/Static/rectangle35141-exq.svg"
+              alt="Rectangle35141"
+              class="loginpage-rectangle3"
+            />
+          </div>
+
+          <div class="loginpage-sign-in-card">
+            <form action="/" method="post">
+
+            <div class="loginpage-continue-cta">
+              <button type="submit" value="submit" class="submit-btn"><b><i>Login</i></b></button>
+
+            </div>
+            <span class="loginpage-text"><span>Login</span></span>
+            <span >
+              <span class="loginpage-text03Me">
+                {% if error %}
+                <p>{{ error }}</p>
+                {% endif %}
+              </span>
+              <span class="loginpage-text02">Forgot your password?</span>
+            </span>
+
+            <div class="loginpage-email">
+
+              <span class="loginpage-text04"><span>Email</span></span>
+              <input
+                type="email"
+                placeholder="youremail@kra.go.ke"
+                class="loginpage-email-input-field"
+                name="email"
+              />
+            </div>
+            <div class="loginpage-password">
+              <span class="loginpage-text06"><span>Password</span></span>
+              <input
+                type="password"
+                placeholder="************"
+                class="loginpage-password-input-field"
+                name="password"
+              />
+
+            </div>
+
+            <span class="loginpage-text08">
+              <span>NDC Daily Checklist</span>
+            </span>
+            <!--<input><span>Login</span>-->
+
+          </form>
+          </div>
+
+          <img
+            src="/Static/image65157-acm8-200h.png"
+            alt="image65157"
+            class="loginpage-image6"
+          />
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
